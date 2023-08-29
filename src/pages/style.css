@@ -1,0 +1,82 @@
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+button {
+	outline: none;
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
+	opacity: 0.5;
+	font-size: 20px;
+	/* text-decoration: underline; */
+	transition: 0.2s linear;
+}
+
+.active {
+	color: gray;
+}
+
+.show {
+	display: inline;
+	animation: fade-in 0.5s linear;
+}
+
+.hide {
+	display: none;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.content {
+	display: inline;
+	height: 90vh;
+}
+
+.navbar {
+	width: 100%;
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	height: 10vh;
+}
+
+.navbar button {
+	background: none;
+	width: 5%;
+	height: 100%;
+}
+
+textarea {
+	margin: 0;
+	padding: 10px;
+	width: 47.91%;
+	height: 90vh;
+	border: none;
+	resize: none;
+}
+
+textarea:focus {
+	border: none;
+	outline: none;
+}
+
+iframe {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 50.5%;
+	float: right;
+	height: 91vh;
+}
